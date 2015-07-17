@@ -7,9 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "WebServiceRequester.h"
+#import "JsonParser.h"
 
-@interface ViewController : UIViewController
-
+@interface ViewController : UIViewController<WebServiceDelegate, JsonParserDelegate, UICollectionViewDataSource, UICollectionViewDelegate>
 
 @end
 

@@ -14,6 +14,12 @@
 		8937FF131B58CB98009B3420 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8937FF121B58CB98009B3420 /* Images.xcassets */; };
 		8937FF161B58CB98009B3420 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8937FF141B58CB98009B3420 /* LaunchScreen.xib */; };
 		8937FF221B58CB99009B3420 /* selfiesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8937FF211B58CB99009B3420 /* selfiesTests.m */; };
+		8937FF2E1B58D2FB009B3420 /* WebServiceRequester.m in Sources */ = {isa = PBXBuildFile; fileRef = 8937FF2D1B58D2FB009B3420 /* WebServiceRequester.m */; };
+		8937FF311B58D311009B3420 /* JsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 8937FF301B58D311009B3420 /* JsonParser.m */; };
+		8937FF331B58D9E5009B3420 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8937FF321B58D9E5009B3420 /* Foundation.framework */; };
+		8937FF371B58E12F009B3420 /* SelfiesModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8937FF361B58E12F009B3420 /* SelfiesModel.m */; };
+		8937FF3B1B58EDD5009B3420 /* ImageUICollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8937FF3A1B58EDD5009B3420 /* ImageUICollectionViewCell.m */; };
+		8937FF401B59493D009B3420 /* Selfie.m in Sources */ = {isa = PBXBuildFile; fileRef = 8937FF3F1B59493D009B3420 /* Selfie.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +46,17 @@
 		8937FF1B1B58CB99009B3420 /* selfiesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = selfiesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8937FF201B58CB99009B3420 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8937FF211B58CB99009B3420 /* selfiesTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = selfiesTests.m; sourceTree = "<group>"; };
+		8937FF2C1B58D2FB009B3420 /* WebServiceRequester.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebServiceRequester.h; sourceTree = "<group>"; };
+		8937FF2D1B58D2FB009B3420 /* WebServiceRequester.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebServiceRequester.m; sourceTree = "<group>"; };
+		8937FF2F1B58D311009B3420 /* JsonParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JsonParser.h; sourceTree = "<group>"; };
+		8937FF301B58D311009B3420 /* JsonParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JsonParser.m; sourceTree = "<group>"; };
+		8937FF321B58D9E5009B3420 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		8937FF351B58E12F009B3420 /* SelfiesModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelfiesModel.h; sourceTree = "<group>"; };
+		8937FF361B58E12F009B3420 /* SelfiesModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelfiesModel.m; sourceTree = "<group>"; };
+		8937FF391B58EDD5009B3420 /* ImageUICollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageUICollectionViewCell.h; sourceTree = "<group>"; };
+		8937FF3A1B58EDD5009B3420 /* ImageUICollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageUICollectionViewCell.m; sourceTree = "<group>"; };
+		8937FF3E1B59493D009B3420 /* Selfie.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Selfie.h; sourceTree = "<group>"; };
+		8937FF3F1B59493D009B3420 /* Selfie.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Selfie.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8937FF331B58D9E5009B3420 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +81,7 @@
 		8937FEF91B58CB98009B3420 = {
 			isa = PBXGroup;
 			children = (
+				8937FF321B58D9E5009B3420 /* Foundation.framework */,
 				8937FF041B58CB98009B3420 /* selfies */,
 				8937FF1E1B58CB99009B3420 /* selfiesTests */,
 				8937FF031B58CB98009B3420 /* Products */,
@@ -81,13 +100,11 @@
 		8937FF041B58CB98009B3420 /* selfies */ = {
 			isa = PBXGroup;
 			children = (
-				8937FF091B58CB98009B3420 /* AppDelegate.h */,
-				8937FF0A1B58CB98009B3420 /* AppDelegate.m */,
-				8937FF0C1B58CB98009B3420 /* ViewController.h */,
-				8937FF0D1B58CB98009B3420 /* ViewController.m */,
-				8937FF0F1B58CB98009B3420 /* Main.storyboard */,
-				8937FF121B58CB98009B3420 /* Images.xcassets */,
-				8937FF141B58CB98009B3420 /* LaunchScreen.xib */,
+				8937FF3C1B58F0A8009B3420 /* application */,
+				8937FF3D1B58F0EA009B3420 /* controller */,
+				8937FF381B58ED65009B3420 /* view */,
+				8937FF341B58E10C009B3420 /* model */,
+				8937FF2B1B58CD65009B3420 /* services */,
 				8937FF051B58CB98009B3420 /* Supporting Files */,
 			);
 			path = selfies;
@@ -96,6 +113,7 @@
 		8937FF051B58CB98009B3420 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				8937FF121B58CB98009B3420 /* Images.xcassets */,
 				8937FF061B58CB98009B3420 /* Info.plist */,
 				8937FF071B58CB98009B3420 /* main.m */,
 			);
@@ -117,6 +135,57 @@
 				8937FF201B58CB99009B3420 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8937FF2B1B58CD65009B3420 /* services */ = {
+			isa = PBXGroup;
+			children = (
+				8937FF2C1B58D2FB009B3420 /* WebServiceRequester.h */,
+				8937FF2D1B58D2FB009B3420 /* WebServiceRequester.m */,
+				8937FF2F1B58D311009B3420 /* JsonParser.h */,
+				8937FF301B58D311009B3420 /* JsonParser.m */,
+			);
+			name = services;
+			sourceTree = "<group>";
+		};
+		8937FF341B58E10C009B3420 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				8937FF351B58E12F009B3420 /* SelfiesModel.h */,
+				8937FF361B58E12F009B3420 /* SelfiesModel.m */,
+				8937FF3E1B59493D009B3420 /* Selfie.h */,
+				8937FF3F1B59493D009B3420 /* Selfie.m */,
+			);
+			name = model;
+			sourceTree = "<group>";
+		};
+		8937FF381B58ED65009B3420 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				8937FF391B58EDD5009B3420 /* ImageUICollectionViewCell.h */,
+				8937FF3A1B58EDD5009B3420 /* ImageUICollectionViewCell.m */,
+				8937FF0F1B58CB98009B3420 /* Main.storyboard */,
+				8937FF141B58CB98009B3420 /* LaunchScreen.xib */,
+			);
+			name = view;
+			sourceTree = "<group>";
+		};
+		8937FF3C1B58F0A8009B3420 /* application */ = {
+			isa = PBXGroup;
+			children = (
+				8937FF091B58CB98009B3420 /* AppDelegate.h */,
+				8937FF0A1B58CB98009B3420 /* AppDelegate.m */,
+			);
+			name = application;
+			sourceTree = "<group>";
+		};
+		8937FF3D1B58F0EA009B3420 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				8937FF0C1B58CB98009B3420 /* ViewController.h */,
+				8937FF0D1B58CB98009B3420 /* ViewController.m */,
+			);
+			name = controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -221,7 +290,12 @@
 			files = (
 				8937FF0E1B58CB98009B3420 /* ViewController.m in Sources */,
 				8937FF0B1B58CB98009B3420 /* AppDelegate.m in Sources */,
+				8937FF311B58D311009B3420 /* JsonParser.m in Sources */,
+				8937FF401B59493D009B3420 /* Selfie.m in Sources */,
+				8937FF3B1B58EDD5009B3420 /* ImageUICollectionViewCell.m in Sources */,
 				8937FF081B58CB98009B3420 /* main.m in Sources */,
+				8937FF2E1B58D2FB009B3420 /* WebServiceRequester.m in Sources */,
+				8937FF371B58E12F009B3420 /* SelfiesModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
